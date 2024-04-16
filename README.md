@@ -92,6 +92,6 @@ select * from face_tab_recognition;
 * run testing.py script and give person name , unknown name to check weather it is rekognizing correctly or not.
 
 
-Note: Modify with your Dynamdb , s3 , IAM role and lamabda function 
+Note: Modify with your Dynamdb, s3 and Rokognize collection name which your given in the scripts.
 
 
