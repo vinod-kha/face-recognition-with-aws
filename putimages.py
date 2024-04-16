@@ -13,6 +13,6 @@ images=[('Elon_Musk.jpg','Elon Musk'),
 # Iterate through list to upload objects to S3   
 for image in images:
     file = open(image[0],'rb')
-    object = s3.Object('vip-images-rekonize' + image[0])    # change to your s3 bucket name
+    object = s3.Object('vip-images-rekonize', 'index/' + image[0])    # change to your s3 bucket name
     ret = object.put(Body=file,
                     Metadata={'FullName':image[1]})
