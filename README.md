@@ -1,5 +1,7 @@
 # Commands
 
+# Follow This Doc to Rekognize images using Python in AWS Env.
+
 - Install aws-shell
 ```
 pip install aws-shell
@@ -73,20 +75,21 @@ aws s3 mb s3://vip-images-rekonize --region us-east-1
 
 ```
 
-* Create a lambda function and attach the role your created 
-* Add trigger the s3 bucket 
-* Once Dynamdb table, s3 bucket , Lambda is successfully created and Integrated now Upload and test
-* Run 'putimages.py' python script to upload images from local to s3 bucket 
-* Images are stored in s3 and metadata are strored in Dyanamodb 
-* Navigate to DDB and click on PartiQL editor and run below command  and you can see the results
+* Create a lambda function and attach the role your created .
+* Add trigger the s3 bucket.
+* Copy lamdafunction.py script and paste in your lambda code.
+* Once Dynamdb table, s3 bucket , Lambda is successfully created and Integrated now Upload and test.
+* Run 'putimages.py' python script to upload images from local to s3 bucket.
+* Images are stored in s3 and metadata are strored in Dyanamodb.
+* Navigate to DDB and click on PartiQL editor and run below command  and you can see the results.
 
 ```
 select * from face_tab_recognition;
 ```
 
 * Once the images are uploaded then test it.
-* We have testing.py python script to test the images we uploaded 
-* run testing.py script and give person name , unknown name to check weather it is rekognizing correctly or not .
+* We have testing.py python script to test the images we uploaded.
+* run testing.py script and give person name , unknown name to check weather it is rekognizing correctly or not.
 
 
 Note: Modify with your Dynamdb , s3 , IAM role and lamabda function 
