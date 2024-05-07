@@ -6,7 +6,6 @@ Flow Diagram
 ![Project-FLow](https://github.com/vinod-kha/face_rekonize/assets/87168769/bdea97a2-beee-4315-94bc-fd94a11dc515)
 
 
-
 - Install aws-shell
 ```
 pip install aws-shell
