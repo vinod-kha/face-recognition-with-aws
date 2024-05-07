@@ -1,5 +1,3 @@
-# Commands
-
 # Follow This Doc to Rekognize images using Python in AWS Env.
 
 Flow Diagram 
